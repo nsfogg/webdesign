@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Portfolio - Demo Sites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            opacity: 0.95;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .demo-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .demo-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .demo-thumbnail {
+            height: 200px;
+            background: linear-gradient(135deg, #1a5490 0%, #2667a8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .demo-thumbnail::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .demo-content {
+            padding: 2rem;
+        }
+
+        .demo-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+
+        .demo-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .demo-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            color: #666;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .demo-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #667eea;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: gap 0.3s ease;
+        }
+
+        .demo-card:hover .demo-link {
+            gap: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: white;
+            opacity: 0.9;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 1rem;
+            }
+        }
+
+        .new-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #d4af37;
+            color: #1a1a1a;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Web Design Portfolio</h1>
+            <p>Browse our collection of demo websites</p>
+        </div>
+
+        <div class="demo-grid">
+            <!-- Holt Brothers Inc Demo -->
+            <a href="/webdesign/holt-brothers-inc/" class="demo-card">
+                <div class="demo-thumbnail">
+                    <span>🏗️</span>
+                    <span class="new-badge">New</span>
+                </div>
+                <div class="demo-content">
+                    <h2 class="demo-title">Holt Brothers Inc.</h2>
+                    <p class="demo-description">
+                        Award-winning construction and development company. Modern, professional design
+                        showcasing construction services, community impact, and project portfolio.
+                    </p>
+                    <div class="demo-tags">
+                        <span class="tag">Construction</span>
+                        <span class="tag">Corporate</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <span class="demo-link">
+                        View Demo →
+                    </span>
+                </div>
+            </a>
+
+            <!-- Placeholder for future demos -->
+            <div class="demo-card" style="opacity: 0.6; pointer-events: none;">
+                <div class="demo-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <span>🚀</span>
+                </div>
+                <div class="demo-content">
+                    <h2 class="demo-title">Coming Soon</h2>
+                    <p class="demo-description">
+                        More demo sites coming soon. Stay tuned for additional portfolio pieces.
+                    </p>
+                    <div class="demo-tags">
+                        <span class="tag">Future</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-card" style="opacity: 0.6; pointer-events: none;">
+                <div class="demo-thumbnail" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <span>💼</span>
+                </div>
+                <div class="demo-content">
+                    <h2 class="demo-title">Coming Soon</h2>
+                    <p class="demo-description">
+                        More demo sites coming soon. Stay tuned for additional portfolio pieces.
+                    </p>
+                    <div class="demo-tags">
+                        <span class="tag">Future</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Built with ❤️ | View on <a href="https://github.com/yourusername/webdesign" target="_blank">GitHub</a></p>
+        </div>
+    </div>
+</body>
+</html>
