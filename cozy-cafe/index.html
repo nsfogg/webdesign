@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cozy Corner Cafe - Your neighborhood cafe serving fresh coffee, homemade pastries, and comfort food in a warm, family-friendly atmosphere">
+    <title>Cozy Corner Cafe | Coffee, Pastries & Comfort Food</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">Cozy Corner Cafe</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">Our Story</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#specials" class="nav-link">Today's Specials</a></li>
+                <li><a href="#hours" class="nav-link">Hours & Location</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">☕ Locally Owned Since 2010</div>
+            <h1 class="hero-title">Welcome to<br><span class="highlight">Cozy Corner Cafe</span></h1>
+            <p class="hero-subtitle">Where every cup is brewed with love and every smile is free!</p>
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <span class="feature-emoji">🥐</span>
+                    <span>Fresh Baked Daily</span>
+                </div>
+                <div class="hero-feature">
+                    <span class="feature-emoji">☕</span>
+                    <span>Premium Coffee</span>
+                </div>
+                <div class="hero-feature">
+                    <span class="feature-emoji">👨‍👩‍👧‍👦</span>
+                    <span>Family Friendly</span>
+                </div>
+            </div>
+            <a href="#menu" class="btn btn-primary">View Our Menu</a>
+        </div>
+        <div class="hero-image">
+            <div class="coffee-cup">☕</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">Our Story</span>
+                <h2 class="section-title">A Little Piece of Home</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Cozy Corner Cafe, your neighborhood gathering spot where friends become family! Since 2010, we've been serving up delicious coffee, homemade pastries, and hearty comfort food with a side of warm hospitality.</p>
+                    <p>Started by the Martinez family, our cafe was born from a simple dream: create a space where everyone feels welcome. Whether you're grabbing a quick latte on your morning commute, meeting friends for brunch, or bringing the kids for hot chocolate and cookies, we've got a cozy spot just for you!</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🏡</div>
+                        <h3>Community First</h3>
+                        <p>We're more than a cafe - we're your neighbors!</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🌱</div>
+                        <h3>Fresh & Local</h3>
+                        <p>Supporting local farms and bakers</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">❤️</div>
+                        <h3>Made with Love</h3>
+                        <p>Every recipe is from the heart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">Our Menu</span>
+                <h2 class="section-title">Delicious Treats Await!</h2>
+                <p class="section-description">All our food is made fresh daily with love</p>
+            </div>
+
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="breakfast">🍳 Breakfast</button>
+                <button class="category-btn" data-category="lunch">🥪 Lunch</button>
+                <button class="category-btn" data-category="drinks">☕ Drinks</button>
+                <button class="category-btn" data-category="sweets">🧁 Sweet Treats</button>
+            </div>
+
+            <!-- Breakfast -->
+            <div class="menu-section active" data-category="breakfast">
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Fluffy Pancakes 🥞</h3>
+                            <span class="price">$8.99</span>
+                        </div>
+                        <p>Stack of 3 buttermilk pancakes with maple syrup & butter</p>
+                        <span class="badge popular">Customer Favorite!</span>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Breakfast Burrito 🌯</h3>
+                            <span class="price">$9.99</span>
+                        </div>
+                        <p>Scrambled eggs, cheese, bacon, peppers & hash browns wrapped in a warm tortilla</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Avocado Toast 🥑</h3>
+                            <span class="price">$7.99</span>
+                        </div>
+                        <p>Smashed avocado on sourdough with cherry tomatoes, feta & a drizzle of olive oil</p>
+                        <span class="badge veggie">Vegetarian</span>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>The Big Breakfast 🍳</h3>
+                            <span class="price">$12.99</span>
+                        </div>
+                        <p>2 eggs any style, bacon or sausage, hash browns & toast</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch -->
+            <div class="menu-section" data-category="lunch">
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Classic Club Sandwich 🥪</h3>
+                            <span class="price">$10.99</span>
+                        </div>
+                        <p>Turkey, bacon, lettuce, tomato & mayo on toasted bread with fries</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Grilled Cheese Deluxe 🧀</h3>
+                            <span class="price">$8.99</span>
+                        </div>
+                        <p>Three cheese blend on sourdough with tomato soup</p>
+                        <span class="badge popular">Kids Love It!</span>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Garden Fresh Salad 🥗</h3>
+                            <span class="price">$9.99</span>
+                        </div>
+                        <p>Mixed greens, seasonal veggies, nuts & choice of dressing</p>
+                        <span class="badge veggie">Vegetarian</span>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Homemade Soup & Bread 🍲</h3>
+                            <span class="price">$7.99</span>
+                        </div>
+                        <p>Daily soup special with fresh baked bread (Ask about today's flavor!)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-section" data-category="drinks">
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Fresh Brewed Coffee ☕</h3>
+                            <span class="price">$3.50</span>
+                        </div>
+                        <p>Hot or iced, made from locally roasted beans. Free refills!</p>
+                        <span class="badge popular">Most Popular!</span>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Specialty Lattes ☕</h3>
+                            <span class="price">$5.50</span>
+                        </div>
+                        <p>Vanilla, Caramel, Hazelnut, or our seasonal flavors</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Fresh Squeezed Juice 🍊</h3>
+                            <span class="price">$4.99</span>
+                        </div>
+                        <p>Orange, grapefruit, or mixed berry (changes seasonally)</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Hot Chocolate 🍫</h3>
+                            <span class="price">$3.99</span>
+                        </div>
+                        <p>Rich & creamy with marshmallows and whipped cream</p>
+                        <span class="badge kids">Kids Favorite!</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sweets -->
+            <div class="menu-section" data-category="sweets">
+                <div class="menu-items">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Homemade Muffins 🧁</h3>
+                            <span class="price">$3.99</span>
+                        </div>
+                        <p>Blueberry, chocolate chip, or banana nut (baked fresh daily!)</p>
+                        <span class="badge popular">Fresh Daily!</span>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Giant Cookies 🍪</h3>
+                            <span class="price">$2.99</span>
+                        </div>
+                        <p>Chocolate chip, oatmeal raisin, or white chocolate macadamia</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Cinnamon Rolls 🥐</h3>
+                            <span class="price">$4.99</span>
+                        </div>
+                        <p>Warm, gooey cinnamon rolls with cream cheese frosting</p>
+                        <span class="badge popular">Weekend Special!</span>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h3>Slice of Pie 🥧</h3>
+                            <span class="price">$5.99</span>
+                        </div>
+                        <p>Ask about today's flavors! (Apple, Cherry, Pecan, or Chocolate Cream)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Specials -->
+    <section class="specials" id="specials">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">Don't Miss Out!</span>
+                <h2 class="section-title">Today's Specials</h2>
+            </div>
+            <div class="specials-grid">
+                <div class="special-card">
+                    <div class="special-day">Monday</div>
+                    <h3>Muffin Monday 🧁</h3>
+                    <p>Buy 2 muffins, get 1 FREE!</p>
+                </div>
+                <div class="special-card highlight">
+                    <div class="special-day">Wednesday</div>
+                    <h3>Family Brunch 👨‍👩‍👧‍👦</h3>
+                    <p>Kids eat free with adult meal purchase</p>
+                </div>
+                <div class="special-card">
+                    <div class="special-day">Friday</div>
+                    <h3>Free Coffee Friday ☕</h3>
+                    <p>Buy any pastry, get a small coffee free!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours & Location -->
+    <section class="hours" id="hours">
+        <div class="container">
+            <div class="hours-grid">
+                <div class="hours-info">
+                    <span class="section-tag">Visit Us!</span>
+                    <h2 class="section-title">Hours & Location</h2>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">6:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">7:00 AM - 7:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Sunday</span>
+                            <span class="time">8:00 AM - 4:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="location-info">
+                        <div class="info-block">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>456 Main Street<br>Pleasant Valley, CA 94588</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(555) 987-6543</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@cozycornercafe.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-icon">🗺️</div>
+                    <p>We're located in the heart of downtown Pleasant Valley, right across from the library!</p>
+                    <div class="directions-note">Free parking available in the rear</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch!</h2>
+                    <p>Have questions? Want to host a private event? Planning a catering order? We'd love to hear from you!</p>
+                    <div class="contact-features">
+                        <div class="contact-feature">✅ Private Event Hosting</div>
+                        <div class="contact-feature">✅ Catering Services</div>
+                        <div class="contact-feature">✅ Custom Cake Orders</div>
+                        <div class="contact-feature">✅ Gift Cards Available</div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <h3>Send Us a Message</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name *" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email *" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message *" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message 💌</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">☕</span>
+                        <span>Cozy Corner Cafe</span>
+                    </div>
+                    <p>Your neighborhood spot for coffee, comfort food & good vibes!</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-hours">
+                    <h4>Quick Hours</h4>
+                    <p>Mon-Fri: 6am-6pm</p>
+                    <p>Sat: 7am-7pm</p>
+                    <p>Sun: 8am-4pm</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>456 Main Street</p>
+                    <p>(555) 987-6543</p>
+                    <p>hello@cozycornercafe.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cozy Corner Cafe. Made with ❤️ in Pleasant Valley</p>
+                <p>Website Demo - Portfolio Piece</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
