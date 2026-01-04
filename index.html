@@ -171,13 +171,60 @@
             letter-spacing: 1px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
+
+        .contact-section {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            margin-top: 3rem;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-section h2 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section p {
+            font-size: 1.125rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .email-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.25rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .email-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+            gap: 1rem;
+        }
+
+        .email-icon {
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Web Design Portfolio</h1>
-            <p>Browse our collection of demo websites</p>
+            <h1>Web Design Collection</h1>
+            <p>Browse my collection of websites</p>
         </div>
 
         <div class="demo-grid">
@@ -236,8 +283,18 @@
             </div>
         </div>
 
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>See Something You Like?</h2>
+            <p>Let's work together to bring your vision to life</p>
+            <a href="mailto:nicksfogg@gmail.com" class="email-button">
+                <span class="email-icon">✉️</span>
+                Email Me
+            </a>
+        </div>
+
         <div class="footer">
-            <p>Built with ❤️ | View on <a href="https://github.com/yourusername/webdesign" target="_blank">GitHub</a></p>
+            <p>Built with ❤️</p>
         </div>
     </div>
 </body>
