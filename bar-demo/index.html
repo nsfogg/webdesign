@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Spot - Your favorite downtown bar with great drinks, live music, and good vibes. Where locals hang out.">
+    <title>The Spot | Downtown Bar • Live Music • Good Times</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="neon-text">THE</span>
+                <span class="logo-divider">•</span>
+                <span class="neon-text">SPOT</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#drinks" class="nav-link">Menu</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#vip" class="nav-link cta">Reserve</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="neon-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">DOWNTOWN'S FAVORITE BAR</div>
+            <h1 class="hero-title">
+                <span class="glitch" data-text="THE SPOT">THE SPOT</span>
+            </h1>
+            <p class="hero-tagline">Good Drinks • Great People • Better Times</p>
+            <div class="hero-info">
+                <div class="info-pill">🍺 Cold Beer</div>
+                <div class="info-pill">🎵 Live Music</div>
+                <div class="info-pill">🎯 Pool Tables</div>
+            </div>
+            <div class="hero-cta">
+                <a href="#events" class="btn btn-neon">This Week's Events</a>
+                <a href="#drinks" class="btn btn-outline">View Menu</a>
+            </div>
+        </div>
+        <div class="scroll-pulse">SCROLL ↓</div>
+    </section>
+
+    <!-- About/Vibe Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title">WHY WE'RE THE SPOT</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="vibe-grid">
+                <div class="vibe-content">
+                    <p class="lead">Welcome to The Spot—your neighborhood bar where everyone knows your name and the drinks are always cold.</p>
+                    <p>Since 2015, we've been downtown's favorite hangout. Whether you're here for happy hour, catching the game, or dancing to live music, we've got the perfect vibe. No pretense, no dress code—just good times with great people.</p>
+                    <div class="stats-row">
+                        <div class="stat-box">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Beers on Tap</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">7</div>
+                            <div class="stat-label">Days a Week</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">2AM</div>
+                            <div class="stat-label">Last Call</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vibe-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎸</div>
+                        <h3>Live Music</h3>
+                        <p>Local bands and open mic nights every week</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🍕</div>
+                        <h3>Bar Food Done Right</h3>
+                        <p>Wings, burgers, and late-night bites</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📺</div>
+                        <h3>All The Games</h3>
+                        <p>Multiple TVs for every game day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Calendar -->
+    <section class="events" id="events">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title">WHAT'S HAPPENING</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Check out this week's lineup</p>
+            </div>
+
+            <div class="events-filter">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="live">Live Music</button>
+                <button class="filter-btn" data-filter="dj">DJ Nights</button>
+                <button class="filter-btn" data-filter="special">Specials</button>
+            </div>
+
+            <div class="events-grid">
+                <div class="event-card" data-category="special">
+                    <div class="event-date">
+                        <span class="date-day">MON</span>
+                        <span class="date-num">13</span>
+                        <span class="date-month">JAN</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-type">MONDAY SPECIAL</span>
+                        <h3 class="event-name">Monday Night Football</h3>
+                        <p class="event-desc">$3 domestic beers and half-price wings during the game</p>
+                        <div class="event-meta">
+                            <span>⏰ 6PM - Close</span>
+                            <span>💵 No Cover</span>
+                        </div>
+                    </div>
+                    <button class="event-btn">See Details</button>
+                </div>
+
+                <div class="event-card" data-category="live">
+                    <div class="event-date">
+                        <span class="date-day">WED</span>
+                        <span class="date-num">15</span>
+                        <span class="date-month">JAN</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-type">LIVE MUSIC</span>
+                        <h3 class="event-name">Open Mic Night</h3>
+                        <p class="event-desc">Bring your talent! Sign up starts at 7PM</p>
+                        <div class="event-meta">
+                            <span>⏰ 8PM - 12AM</span>
+                            <span>💵 Free Entry</span>
+                        </div>
+                    </div>
+                    <button class="event-btn">See Details</button>
+                </div>
+
+                <div class="event-card featured" data-category="special">
+                    <div class="featured-badge">POPULAR</div>
+                    <div class="event-date">
+                        <span class="date-day">THU</span>
+                        <span class="date-num">16</span>
+                        <span class="date-month">JAN</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-type">WEEKLY SPECIAL</span>
+                        <h3 class="event-name">Trivia Thursday</h3>
+                        <p class="event-desc">Test your knowledge! Prizes for top 3 teams</p>
+                        <div class="event-meta">
+                            <span>⏰ 7PM - 10PM</span>
+                            <span>💵 $5 per team</span>
+                        </div>
+                    </div>
+                    <button class="event-btn">See Details</button>
+                </div>
+
+                <div class="event-card" data-category="live">
+                    <div class="event-date">
+                        <span class="date-day">FRI</span>
+                        <span class="date-num">17</span>
+                        <span class="date-month">JAN</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-type">LIVE BAND</span>
+                        <h3 class="event-name">The Vinyl Junkies</h3>
+                        <p class="event-desc">Classic rock covers from the 70s & 80s</p>
+                        <div class="event-meta">
+                            <span>⏰ 9PM - 1AM</span>
+                            <span>💵 $5 Cover</span>
+                        </div>
+                    </div>
+                    <button class="event-btn">See Details</button>
+                </div>
+
+                <div class="event-card" data-category="dj">
+                    <div class="event-date">
+                        <span class="date-day">SAT</span>
+                        <span class="date-num">18</span>
+                        <span class="date-month">JAN</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-type">DJ NIGHT</span>
+                        <h3 class="event-name">Saturday Night Dance Party</h3>
+                        <p class="event-desc">DJ Spin spinning top 40, hip-hop, and throwbacks</p>
+                        <div class="event-meta">
+                            <span>⏰ 10PM - 2AM</span>
+                            <span>💵 $5 Cover After 11PM</span>
+                        </div>
+                    </div>
+                    <button class="event-btn">See Details</button>
+                </div>
+
+                <div class="event-card" data-category="special">
+                    <div class="event-date">
+                        <span class="date-day">SUN</span>
+                        <span class="date-num">19</span>
+                        <span class="date-month">JAN</span>
+                    </div>
+                    <div class="event-info">
+                        <span class="event-type">SUNDAY FUNDAY</span>
+                        <h3 class="event-name">Brunch & Bloody Marys</h3>
+                        <p class="event-desc">$2 off all brunch items and build-your-own Bloody Mary bar</p>
+                        <div class="event-meta">
+                            <span>⏰ 11AM - 4PM</span>
+                            <span>💵 No Cover</span>
+                        </div>
+                    </div>
+                    <button class="event-btn">See Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks Menu -->
+    <section class="drinks" id="drinks">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title">DRINK MENU</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Cold beer, classic cocktails, and good times</p>
+            </div>
+
+            <div class="drinks-grid">
+                <div class="drink-card">
+                    <div class="drink-glow"></div>
+                    <h3>Draft Beer 🍺</h3>
+                    <p class="drink-desc">20+ beers on tap - Domestic & Craft</p>
+                    <p class="drink-price">$5-8</p>
+                    <span class="drink-badge">Popular</span>
+                </div>
+
+                <div class="drink-card featured">
+                    <div class="drink-glow"></div>
+                    <h3>The Spot's Old Fashioned 🥃</h3>
+                    <p class="drink-desc">Bourbon, Bitters, Sugar, Orange Twist</p>
+                    <p class="drink-price">$10</p>
+                    <span class="drink-badge signature">House Special</span>
+                </div>
+
+                <div class="drink-card">
+                    <div class="drink-glow"></div>
+                    <h3>Well Drinks 🍸</h3>
+                    <p class="drink-desc">Classic cocktails made right</p>
+                    <p class="drink-price">$6</p>
+                </div>
+
+                <div class="drink-card">
+                    <div class="drink-glow"></div>
+                    <h3>Margarita 🍹</h3>
+                    <p class="drink-desc">Tequila, Triple Sec, Lime, Salt Rim</p>
+                    <p class="drink-price">$8</p>
+                    <span class="drink-badge">Happy Hour $5</span>
+                </div>
+
+                <div class="drink-card">
+                    <div class="drink-glow"></div>
+                    <h3>Whiskey Selection 🥃</h3>
+                    <p class="drink-desc">Wide variety of bourbon, rye, and scotch</p>
+                    <p class="drink-price">$7-15</p>
+                </div>
+
+                <div class="drink-card">
+                    <div class="drink-glow"></div>
+                    <h3>Shot Specials 🔥</h3>
+                    <p class="drink-desc">Ask your bartender about today's special</p>
+                    <p class="drink-price">$4-6</p>
+                </div>
+            </div>
+
+            <div class="bottle-service">
+                <h3>🍻 HAPPY HOUR DAILY 4-7PM 🍻</h3>
+                <p>$1 off all beers • $2 off well drinks • Half-price appetizers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Section -->
+    <section class="vip" id="vip">
+        <div class="container">
+            <div class="vip-content">
+                <h2 class="vip-title">RESERVE YOUR SPOT</h2>
+                <div class="title-underline"></div>
+                <p class="vip-subtitle">Book a table for your group or private event</p>
+
+                <div class="vip-packages">
+                    <div class="vip-package">
+                        <div class="package-icon">🍻</div>
+                        <h3>Happy Hour Table</h3>
+                        <div class="package-price">Free</div>
+                        <ul class="package-features">
+                            <li>✓ Table for 4-6 people</li>
+                            <li>✓ Best during happy hour</li>
+                            <li>✓ First come, first served</li>
+                            <li>✓ Call ahead to check availability</li>
+                        </ul>
+                    </div>
+
+                    <div class="vip-package highlight">
+                        <div class="popular-tag">POPULAR</div>
+                        <div class="package-icon">🎉</div>
+                        <h3>Weekend Table</h3>
+                        <div class="package-price">$50</div>
+                        <ul class="package-features">
+                            <li>✓ Reserved table for 6-8</li>
+                            <li>✓ Friday & Saturday nights</li>
+                            <li>✓ Prime location near stage</li>
+                            <li>✓ Credit goes toward tab</li>
+                            <li>✓ Reserved all night</li>
+                        </ul>
+                    </div>
+
+                    <div class="vip-package">
+                        <div class="package-icon">🎊</div>
+                        <h3>Private Event</h3>
+                        <div class="package-price">Call</div>
+                        <ul class="package-features">
+                            <li>✓ Full or partial buyout</li>
+                            <li>✓ Birthdays & celebrations</li>
+                            <li>✓ Custom food & drink packages</li>
+                            <li>✓ Sound system access</li>
+                            <li>✓ Your music, your vibe</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn btn-neon btn-large">Contact Us to Reserve</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Location -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>COME HANG OUT</h2>
+                    <div class="title-underline"></div>
+
+                    <div class="info-block">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>425 Main Street<br>Downtown, City 12345</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon">🕐</div>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Monday - Sunday<br>11AM - 2AM<br><span class="closed-tag">Happy Hour 4-7PM Daily</span></p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon">📱</div>
+                        <div>
+                            <h4>Contact</h4>
+                            <p>Phone: (555) THE-SPOT<br>Email: hello@thespot.bar</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon">🔞</div>
+                        <div>
+                            <h4>Age Requirement</h4>
+                            <p>21+ After 9PM • Valid ID Required</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-btn">📘 Facebook</a>
+                        <a href="#" class="social-btn">📸 Instagram</a>
+                        <a href="#" class="social-btn">🎵 TikTok</a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>DROP US A LINE</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Name *" name="name" required>
+                        <input type="email" placeholder="Email *" name="email" required>
+                        <input type="tel" placeholder="Phone" name="phone">
+                        <select name="inquiry" required>
+                            <option value="">What can we help with?</option>
+                            <option value="vip">Table Reservation</option>
+                            <option value="event">Private Event / Party</option>
+                            <option value="general">General Question</option>
+                            <option value="performance">Book a Band</option>
+                        </select>
+                        <textarea placeholder="Message *" name="message" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-neon btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="neon-text">THE</span>
+                        <span>•</span>
+                        <span class="neon-text">SPOT</span>
+                    </div>
+                    <p>Your downtown hangout since 2015</p>
+                </div>
+                <div class="footer-info">
+                    <p>425 Main Street, Downtown, City 12345</p>
+                    <p>Mon-Sun: 11AM - 2AM</p>
+                    <p>Happy Hour Daily 4-7PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Spot. All Rights Reserved.</p>
+                <p>Website Demo - Portfolio Piece</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
